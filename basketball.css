@@ -1,0 +1,379 @@
+* {
+    padding: 0;
+    margin: 0;
+
+
+
+}
+
+.container {
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+
+
+
+#wrapperr>div {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+nav #wrapperr {
+    max-width: 1600px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.account-text {
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+.account-btn {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.account-btn:focus {
+    outline: none;
+}
+
+#wrapperr .logo {
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    width: 100px;
+    height: 75px;
+    bottom: 5px;
+}
+
+#wrapperr>div {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+#wrapperr .shopping-cart {
+    margin-left: 10px;
+    font-size: 1.4rem;
+}
+
+#wrapperr .shopping-cart {
+    margin-left: 10px;
+    font-size: 1.4rem;
+}
+
+.shopping-cart .sum-prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#sum-prices {
+    padding-left: 5px;
+}
+
+.sum-prices h6 {
+    font-size: 0.9rem;
+}
+
+.shoppingCartButton {
+    cursor: pointer;
+}
+
+.shoppingCartButton:hover,
+.account:hover * {
+    color: #0e5e53;
+}
+
+.producstOnCart {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+    background-color: #202020;
+    width: 300px;
+    height: 500px;
+    color: #f0f0f0;
+    z-index: 15;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    text-align: center;
+    animation: fade 1s;
+}
+
+.producstOnCart::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes fade {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.producstOnCart::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.hide {
+    display: none;
+    visibility: none;
+}
+
+.producstOnCart ul {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.producstOnCart .buyItem {
+    border-bottom: #aaa 1px solid;
+    width: 90%;
+    padding: 10px 0;
+    display: flex;
+}
+
+.producstOnCart img {
+    width: 90px;
+}
+
+.producstOnCart .top {
+    display: flex;
+    background-color: #616161;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.top button {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: #c24c37;
+    cursor: pointer;
+}
+
+.top button:hover {
+    color: #e40505;
+}
+
+.top h3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.producstOnCart>.checkout {
+    font-size: 0.9rem;
+    margin: 20px auto;
+    border: none;
+    background-color: #297075;
+    padding: 10px 20px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.overlay {
+    overflow: hidden;
+    display: inline-block;
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.stopScrolling {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.buyItem h6 {
+    margin-bottom: 10px;
+}
+
+.buyItem button {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 0 6px;
+    border: none;
+}
+
+.buyItem button:active {
+    color: #96c8cc;
+}
+
+.buyItem>div {
+    padding: 0 20px;
+}
+
+.producstOnCart .empty {
+    justify-self: center;
+    margin: 150px auto;
+}
+
+.price {
+    color: #dd3333;
+    margin-top: 10px;
+    text-align: left;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.checkout:hover {
+    color: rgb(240, 76, 26);
+}
+
+
+
+
+
+body {
+
+    background-image: url(./img_basketball/anhnen4.png);
+    background-size: cover;
+    background-position-y: -600px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.15;
+
+
+
+}
+
+#wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+ul.products {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.products li {
+    flex-basis: 25%;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+
+}
+
+ul.products li img {
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+ul.products li .product__info {
+    padding: 10px 0px;
+}
+
+ul.products li .product__info a {
+    display: block;
+    text-decoration: none;
+}
+
+ul.products li .product__top {
+    position: relative;
+    overflow: hidden;
+}
+
+ul.products li .product__top button.buy {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    background-color: #af3a40;
+    padding: 10px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: -37px;
+    transition: 0.25s ease-in-out;
+    opacity: 0.1px;
+    color: #fff;
+
+}
+
+ul.products li:hover button.buy {
+    bottom: 0px;
+}
+
+ul.products li .product__info a.product__cat {
+    font-size: 11px;
+    color: rgb(219, 68, 68);
+    text-transform: uppercase;
+    padding: 3px 0px;
+}
+
+ul.products li .product__info a.product__name {
+    color: #000000;
+    padding: 3px 0px;
+
+}
+
+ul.products li .product__info .product__price {
+    color: rgb(235, 163, 163);
+    padding: 3px 0px;
+    font-weight: bold;
+}
+
+ul.products li .product__top .product__thumb img {
+    display: block;
+}
+
+ul.products li:hover .product__top .product__thumb img {
+    filter: opacity(80%);
+}
+
+/* cart */
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    min-height: 100vh;
+    padding: 20px;
+    background: #fff;
+    box-shadow: -2px 0 4px hsl(0 4% 15%/10%);
+}
